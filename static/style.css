@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+p {
+    font-size: 18px;
+    color: #888888;
+    margin-top: 12px;
+}
