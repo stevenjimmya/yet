@@ -26,3 +26,27 @@ p {
     color: #888888;
     margin-top: 12px;
 }
+
+input {
+    margin-top: 24px; /* space above element */
+    padding: 14px 20px; /* space inside element between the text and edges */
+    width: 400px; 
+    border: none;
+    border-radius: 8px; /* rounds the corners */
+    background-color: #1e1e1e; /* background color of the element */
+    color: #ffffff;/* font size */
+    font-size: 16px; /* space above element */
+    outline: none; 
+}
+
+button {
+    margin-top: 12px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #0f0f0f;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer; /* makes the mouse turn into a hand when hovering the button */
+}
