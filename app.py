@@ -9,7 +9,13 @@ app = Flask(__name__)
 # create an instance of the Flask class, which will be our app
 @app.route('/')
 def home():
-    return render_template('index.html')
+    try:
+        with open("intentions.json", "r") as f:
+            saved_data = json.load(f)
+    except FileNotFoundError:
+        saved_data = None
+
+    return render_template('index.html', saved_intention=saved_data)
 
 @app.route('/set_intention', methods=['POST'])
 def set_intention():

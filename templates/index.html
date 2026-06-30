@@ -7,6 +7,9 @@
     <body>
         <h1>Yet.</h1>
         <p>What do you intend to do today?</p>
+        {% if saved_intention %}
+        <p>Today's intention: {{ saved_intention.intention }}</p>
+{% endif %}
         <input type="text" id="intention-input" placeholder="I intend to..." />
         <button id="submit-btn">Set intention</button>
         <script src="{{ url_for('static', filename='script.js') }}"></script>
